@@ -13,7 +13,7 @@ Page html/php permettant de gérer les données dans la base de données 'biblio
 3. Tester sur seveur local
 
 ```bash
-git clone https://github.com/yourusername/yourproject.git](https://github.com/Pixeloko/td-bibliotheque
+git clone https://github.com/Pixeloko/td-bibliotheque
 ```
 
 ## Fonctionnalités
