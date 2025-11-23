@@ -50,4 +50,4 @@ td-bibliotheque/
 ```
 
 ## Contact
-https://pixeloko.github.io/CV/ # td-bibliotheque
+https://pixeloko.github.io/CV/
