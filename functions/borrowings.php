@@ -22,7 +22,7 @@ function createBorrowing(int $bookId, int $memberId, string $borrowedAt, string 
     $stmt = $pdo->prepare("SELECT COUNT(*) FROM borrowings WHERE member_id = :memberId AND returned_at IS NULL");
     $stmt->execute(['memberId' => $memberId]);
     $activeBorrowings = $stmt->fetchColumn();
-    if ($activeBorrowings >= MAX_ACTIVE_BORROWINGS) {
+    if ($activeBorrowings >= 3) {
         throw new Exception("Vous avez atteint la limite d'emprunt.");
     }
 
@@ -163,7 +163,7 @@ function borrowBook(int $bookId, int $memberId): int
         $stmtM = $pdo->prepare("SELECT COUNT(*) AS active_borrowings FROM borrowings WHERE member_id = :memberId AND returned_at IS NULL");
         $stmtM->execute(['memberId' => $memberId]);
         $memberData = $stmtM->fetch(PDO::FETCH_ASSOC);
-        if ($memberData['active_borrowings'] >= 3) {
+        if ($memberData['active_borrowings'] >= MAX_ACTIVE_BORROWINGS) {
             throw new Exception("Le membre a atteint la limite de 3 emprunts.");
         }
 
