@@ -4,7 +4,7 @@ Page html/php permettant de gérer les données dans la base de données 'biblio
 
 ## Table des matières
 - [Installation](#installation)
-- [Fonctionnalités](#fonctionnalites)
+- [Fonctionnalites](#fonctionnalites)
 - [Configuration](#configuration)
 
 ## Installation
@@ -16,7 +16,7 @@ Page html/php permettant de gérer les données dans la base de données 'biblio
 git clone https://github.com/Pixeloko/td-bibliotheque
 ```
 
-## Fonctionnalités
+## Fonctionnalites
 ### Fonctions livres
 - Retrouver des infos sur les livres ayant tel id, telle catégorie
 - Vérifier la disponibilité d'un livre
